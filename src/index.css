@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-black text-white font-math;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent;
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-white/5 border border-white/10;
+}
+
+.smooth-enter {
+  @apply transition-all duration-300;
+}
